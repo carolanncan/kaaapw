@@ -1,9 +1,3 @@
-###
-# Blog settings
-###
-
-# Time.zone = "UTC"
-
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
@@ -79,9 +73,7 @@ page "/feed.xml", layout: false
 # end
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
 
 # Build-specific configuration

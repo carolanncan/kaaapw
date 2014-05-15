@@ -1,0 +1,1 @@
+jQuery(".js-accordion-trigger").bind("click focus",function(){jQuery(this).parent().find("div").slideToggle("fast"),jQuery(this).parent().toggleClass("is-expanded"),event.preventDefault()});

@@ -1,0 +1,50 @@
+---
+layout: main
+---
+
+%h2
+  About My Blog
+
+%ul.accordion-menus
+  %li
+    %a.js-accordion-trigger{href: "#"} Middleman
+    .submenu
+      %p
+        Middleman is a command-line tool for creating static websites using
+        all the shortcuts and tools of the modern web development environment.
+      %a{href: "http://middlemanapp.com"} Middleman
+  %li
+    %a.js-accordion-trigger{href: "#"} Bourbon
+    .submenu
+      %p
+        Bourbon is a comprehensive library of sass mixins that are designed to
+        be simple and easy to use. No configuration required.
+      %a{href: "http://bourbon.io"} Bourbon
+  %li
+    %a.js-accordion-trigger{href: "#"} Neat
+    .submenu
+      %p
+        Neat is a semantic grid framework built on top of Sass and Bourbon.
+        It is simple enough to get you up and running in minutes, and powerful enough
+        to handle any responsive layout you can dream of.
+      %a{href: "http://neat.bourbon.io"} Neat
+  %li
+    %a.js-accordion-trigger{href: "#"} Bitters
+    .submenu
+      %p
+        Scaffold styles, variables and structure for Bourbon projects.
+        Bitters helps designers start projects faster by defining
+        a basic set of variables and project structure.
+      %a{href: "http://bitters.bourbon.io/"} Bitters
+  %li
+    %a.js-accordion-trigger{href: "#"} Refills
+    .submenu
+      %p
+        Refills are prepackaged patterns and compontents, built ontop of
+        Bourbon, Bitters, and Neat.
+      %a{href: "http://refills.bourbon.io"} Refills
+
+- content_for :footer_main do
+  = partial 'partials/footer_main'
+
+= javascript_include_tag 'accordion'

@@ -1,0 +1,28 @@
+footer {
+  border-top: 1px solid $base-border-color;
+  margin: 2em 0;
+  padding-top: 2em;
+
+  .heading {
+    font-size: .9em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+footer.posts {
+  font-size: .85em;
+
+  a, h2 {
+    color: lighten($dark-gray, 40);
+  }
+
+  a, h1 {
+    font-weight: 700;
+  }
+
+  h2 {
+    font-weight: 500;
+  }
+}

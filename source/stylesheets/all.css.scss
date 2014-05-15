@@ -1,10 +1,15 @@
-//= require font-awesome
-
 @charset "utf-8";
 
-@import "normalize";
-
+//Libraries
 @import "bourbon";
 @import "bitters/bitters";
-@import "bitters/grid-settings";
 @import "neat";
+
+//Partials
+@import "partials/accordion";
+@import "partials/footer";
+@import "partials/helpers";
+@import "partials/index";
+@import "partials/layout";
+@import "partials/nav";
+@import "partials/posts";

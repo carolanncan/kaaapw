@@ -1,0 +1,31 @@
+.post-heading {
+  margin-bottom: 1em;
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    color: lighten($blue, 25);
+    font-size: 1.2em;
+  }
+}
+
+.post-summary {
+  h1 {
+    display: none;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: $base-line-height * 1.1;
+  }
+
+  a {
+    color: $dark-gray;
+  }
+
+  .image {
+    display: none;
+  }
+}

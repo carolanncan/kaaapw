@@ -1,0 +1,21 @@
+%footer.posts
+  %h5.heading Next Up
+
+  - next_article = current_article.next_article
+  - prev_article = current_article.previous_article
+
+  %ul.posts
+    %li.post
+      .post-heading
+        - if prev_article
+          %a{ :rel => "prev", :href => prev_article.url }
+            %h1
+              = prev_article.title
+            %h2
+              = prev_article.data.subtitle
+        - else next_article
+          %a{ :rel => "next", :href => next_article.url }
+            %h1
+              = next_article.title
+            %h2
+              = next_article.data.subtitle

@@ -13,9 +13,9 @@ activate :blog do |blog|
     }
   }
 
-  # activate :google_analytics do |ga|
-  #     ga.tracking_id = 'UA-XXXXXXX-X' # Replace with your property ID.
-  # end
+  activate :google_analytics do |ga|
+      ga.tracking_id = 'UA-51006708-1'
+  end
 
   blog.tag_template = "tag.html"
 

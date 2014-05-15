@@ -1,13 +1,8 @@
-# Blog settings
-
-# Time.zone = "UTC"
-
 activate :blog do |blog|
   blog.permalink = "{year}/{month}/{day}/{title}.html"
   # Matcher for blog source files
   blog.sources = "posts/{year}-{month}-{day}-{title}.html"
   blog.taglink = "tags/{tag}.html"
-  # blog.location = "location/{location}.html"
   blog.layout = "main"
   blog.summary_separator = /(READMORE)/
     blog.summary_length = 150
@@ -18,9 +13,9 @@ activate :blog do |blog|
     }
   }
 
-  activate :google_analytics do |ga|
-      ga.tracking_id = 'UA-XXXXXXX-X' # Replace with your property ID.
-  end
+  # activate :google_analytics do |ga|
+  #     ga.tracking_id = 'UA-XXXXXXX-X' # Replace with your property ID.
+  # end
 
   blog.tag_template = "tag.html"
 
@@ -33,7 +28,6 @@ end
 page "/feed.xml", layout: false
 
 # Helpers
-
 activate :automatic_image_sizes
 activate :livereload
 
@@ -41,7 +35,6 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :relative_links, true
-set :build_dir, 'tmp'
 
 # Build-specific configuration
 configure :build do

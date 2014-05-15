@@ -1,29 +1,19 @@
 section {
-  margin: 2em 0;
+}
+
+h1, h2, h3, h4, h5, p {
+  text-align: center;
 }
 
 p {
   font-size: 1.1em;
   line-height: $base-line-height * 1.25;
   margin-bottom: 1.5em;
-}
 
-figure {
-  margin: 2em 0 1em;
-  width: 100%;
-
-  .image {
-    margin: .5em 0;
-
-    img {
-      @include fill-parent;
-      display: block;
-    }
-  }
-
-  figcaption {
-    color: darken($light-gray, 30);
-    font-size: .9em;
-    margin-top: 1em;
+  img {
+    display: block;
+    margin: 2em auto 1em;
+    width: 70%;
+    height: auto;
   }
 }

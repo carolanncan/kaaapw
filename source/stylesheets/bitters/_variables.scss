@@ -1,10 +1,12 @@
 // Typography
 ///////////////////////////////////////////////////////////////////////////////
-$sans-serif: 'Oxygen', $helvetica;
-$serif: $georgia;
+$sans-serif: 'Muli', $helvetica;
+$serif: 'Radley', $georgia;
+$sans-bold: 'Montserrat' $helvetica;
+$icon: 'FontAwesome';
 
 $base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$header-font-family: $sans-bold;
 
 // Sizes
 ///////////////////////////////////////////////////////////////////////////////
@@ -15,27 +17,33 @@ $base-border-radius: em(3);
 // Colors
 ///////////////////////////////////////////////////////////////////////////////
 
+$black: #09191B;
 $blue: #477DCA;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #DDD;
 $light-red: #FBE3E4;
-$light-yellow: #FFF6BF;
-$light-green: #E6EFC2;
+
+$light-green: #A7E2C5;
+$bright-green: #1C541D;
+$mint-green: #fff;
+
+$light-blue: #E0F5EE;
+$light-yellow: #DFD69F;
 
 // Body Color
-$base-body-color: white;
+$base-body-color: $light-yellow;
 
 //  Font Colors
-$base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-font-color: $black;
+$base-accent-color: $black;
 
 //  Text Link Colors
 $base-link-color: $base-accent-color;
 $hover-link-color: darken($base-accent-color, 15);
 
 // Border color
-$base-border-color: $light-gray;
+$base-border-color: $base-accent-color;
 
 // Flash Colors
 $error-color: $light-red;

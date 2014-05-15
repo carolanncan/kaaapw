@@ -1,9 +1,14 @@
-%nav
-  %section
-    %ul.pull-left
-      %li
-        = link_to "Blog Title", "index.html", :class => "blog-title"
+%button.js-menu-trigger.sliding-menu-button{type: "button"}
+  Menu
 
-    %ul.pull-right
-      %li
-        = link_to "About", "about.html"
+%nav
+  .js-menu.sliding-menu-content
+    %ul
+      - locations = blog.articles.group_by {|a| a.metadata[:page]['location'] }
+      %ol
+        - locations.each do |location, articles|
+          %li
+            = link_to location, location_path(location)
+        %li.blog-title
+          = link_to "My Type", "/index.html"
+  .js-menu-screen.menu-screen

@@ -1,0 +1,9 @@
+@mixin grayscale($scale) {
+  -webkit-filter: grayscale($scale);
+  -moz-filter: grayscale($scale);
+  -ms-filter: grayscale($scale);
+  -o-filter: grayscale($scale);
+  filter: grayscale($scale);
+  filter: url(grayscale.svg#greyscale);
+  filter: gray;
+}

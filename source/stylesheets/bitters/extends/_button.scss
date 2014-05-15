@@ -1,7 +1,19 @@
 %button {
-  @include button(simple, $base-accent-color);
+  @include transition(all .15s linear);
   -webkit-font-smoothing: antialiased;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 30px;
+  color: $black;
+  padding: .3em .75em;
+  font-family: $base-font-family;
   font-size: $base-font-size;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1em;
+
+  &:hover {
+    background: $base-accent-color;
+    border-color: $black;
+    color: lighten($black, 80);
+  }
 }

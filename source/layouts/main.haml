@@ -6,15 +6,20 @@
     %title
       My Blog#{' - ' + current_article.title unless current_article.nil?}
 
-    %link{href: "http://fonts.googleapis.com/css?family=Oxygen:400,300,700", rel: "stylesheet", type: "text/css"}
+    %link{href: "http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic", rel: "stylesheet", type: "text/css"}
+    %link{href: "http://fonts.googleapis.com/css?family=Montserrat:400,700", rel: "stylesheet", type: "text/css"}
+    %link{href: "http://fonts.googleapis.com/css?family=Radley:400,400italic", rel: "stylesheet", type: "text/css"}
+
+    %script{src: "javascripts/jquery.js"}
 
     = stylesheet_link_tag "all"
     = javascript_include_tag  "all"
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
 
-  %body
-    #main{:role => "main"}
-      = partial("partials/nav")
+%body
+  %main{:role => "main"}
+    = partial("partials/nav")
+    %section
       = yield
-      - if content_for?(:footer_main)
-        = yield_content :footer_main
+  - if content_for?(:footer_main)
+    = yield_content :footer_main

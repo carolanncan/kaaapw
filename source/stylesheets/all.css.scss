@@ -1,3 +1,5 @@
+//= require font-awesome
+
 @charset "utf-8";
 
 //Libraries
@@ -5,11 +7,19 @@
 @import "bitters/bitters";
 @import "neat";
 
-//Partials
-@import "partials/accordion";
-@import "partials/footer";
-@import "partials/helpers";
+//Mixins
+@import "partials/mixins";
+
+//Base
 @import "partials/index";
 @import "partials/layout";
-@import "partials/nav";
 @import "partials/posts";
+
+//Components
+@import "partials/accordion";
+@import "partials/collageplus";
+@import "partials/helpers";
+
+//Modules
+@import "partials/footer";
+@import "partials/nav";

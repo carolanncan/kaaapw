@@ -31,7 +31,6 @@ h4 {
 }
 
 h5, h5 a {
-  color: darken($light-gray, 25);
   font-size: 1em;
   font-weight: 500;
 }
@@ -91,7 +90,7 @@ del {
 }
 
 blockquote {
-  border-left: 2px solid $base-border-color;
+  border-left: 1px solid $medium-gray;
   color: lighten($base-font-color, 15);
   margin: $base-line-height 0;
   padding-left: $base-line-height / 2;

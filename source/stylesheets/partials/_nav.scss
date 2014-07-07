@@ -33,6 +33,13 @@ button.js-menu-trigger {
       content: '\f106';
     }
   }
+
+  span {
+    @include media(max-width $medium-screen) {
+      display: none;
+      visibility: hidden;
+    }
+  }
 }
 
 .sliding-menu-content {

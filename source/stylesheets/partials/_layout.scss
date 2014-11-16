@@ -11,26 +11,17 @@ section {
   margin: 2em 0;
 }
 
-ul.posts {
-  li.post {
-    padding: 2em 0;
+.post {
+  padding: 2em 0;
 
-    &:last-of-type {
-      border-bottom: none;
-    }
-
-    h5 {
-      font-size: .9em;
-      line-height: 1px;
-    }
+  &:last-of-type {
+    border-bottom: none;
   }
 }
 
-ol {
-  li {
-    display: inline-block;
-    font-size: .9em;
-    font-weight: 500;
-    margin: .4em 0;
-  }
+ol li {
+  display: inline-block;
+  font-size: .9em;
+  font-weight: 500;
+  margin: .4em 0;
 }

@@ -1,33 +1,56 @@
-ul.posts {
-  li.post {
-    @include span-columns(4 of 12);
-    @include omega(3n);
-    height: 350px;
-    margin-bottom: 0;
+.post {
+  @include span-columns(4 of 12);
+  @include omega(3n);
+  height: 350px;
+  margin-bottom: 0;
 
-    &:hover {
-      .post-image {
-        &:before {
-          background-color: rgba($black, .9);
-        }
-      }
+  @include media(max-width $medium-screen) {
+    @include span-columns(4 of 4);
+  }
+}
 
-      .post-heading {
-        color: white;
+.post-link {
+  &:hover {
+    .post-image {
+      &:before {
+        background-color: rgba($black, .9);
       }
     }
 
-    @include media(max-width $medium-screen) {
-      @include span-columns(4 of 4);
+    .post-heading {
+      color: white;
     }
   }
 }
 
+.post-heading {
+  @include position(relative, -190px 0 0 0);
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+}
+
+.post-title {
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  margin: .5em auto 1.4em;
+  padding: 0 .5em;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.post-meta-info {
+  display: block;
+  font-size: .9em;
+  margin-bottom: 1.3em;
+}
+
 .post-image {
   @include grayscale(100%);
-  @include size(260px);
+  @include size(em(220));
   @include transition(all .15s linear);
   border-radius: 50%;
+  border: 1px solid black;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -45,23 +68,5 @@ ul.posts {
     content: '';
     display: block;
     opacity: .7;
-  }
-}
-
-.post-heading {
-  @include position(relative, -190px 0 0 0);
-  margin: 0 auto;
-  text-align: center;
-  z-index: 2;
-
-  h1 {
-    display: inline-block;
-    font-size: 1.2em;
-    letter-spacing: 2px;
-    margin: .5em auto 1.4em;
-    padding-bottom: 1em;
-    padding: 0 .5em;
-    text-transform: uppercase;
-    width: 50%;
   }
 }

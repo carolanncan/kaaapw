@@ -25,7 +25,7 @@ ul.posts {
 
 .post-image {
   @include grayscale(100%);
-  @include size(300px);
+  @include size(260px);
   @include transition(all .15s linear);
   border-radius: 50%;
   margin: 0 auto;
@@ -43,8 +43,8 @@ ul.posts {
     @include position(absolute, 0px 0px 0px 0px);
     background-color: $mint-green;
     content: '';
-    opacity: .7;
     display: block;
+    opacity: .7;
   }
 }
 
